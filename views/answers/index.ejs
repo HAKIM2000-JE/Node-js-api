@@ -24,35 +24,79 @@
             <div class="card mt-4">
 
                 <div class="card-body">
-                    <h4 class="card-title">
-                      Nom Complet :   <%= answer.name %>
-                    </h4>
+                    <h6 class="card-title">
+                        firstname:  <%= answer.firstname %>
+                    </h6>
                      <hr class="my-4">
                     <h6 class="card-title">
-                       Email :   <%= answer.email %>
+                        lastname:  <%= answer.lastname %>
                     </h6>
                     <hr class="my-4">
                     <h6 class="card-title">
-                       Service Demandé :  <%= answer.service %>
+                        phone: <%= answer.phone %>
                     </h6>
 
                     <hr class="my-4">
 
-                    <div class="card-subtitle text-muted mb-2">
-                      fait le :   <%= answer.createdAt.toLocaleDateString() %>
-                    </div>
+                    <h6 class="card-title">
+                        email:  <%= answer.email %>
+                     </h6>
+ 
+
+                   
 
                     <hr class="my-4">
+
+                    <h6 class="card-title">
+                        sector: <%= answer.sector %>
+                     </h6>
+ 
+
+                     <h6 class="card-title">
+                        activity : <%= answer.activity %>
+                     </h6>
+
+
+                     <h6 class="card-title">
+                        GlobalComplexity:   <%= answer.GlobalComplexity %> %
+                     </h6>
+
+
+                     <h6 class="card-title">
+                        Pricingmaturity:   <%= answer.Pricingmaturity %> %
+                     </h6>
+
+                     <h6 class="card-title">
+                        Human ressources:   <%= answer.hr %> %
+                     </h6>
+
+                    
+                     <h6 class="card-title">
+                        Tools:   <%= answer.tool %> %
+                     </h6>
+ 
+                     <h6 class="card-title">
+                        Data:   <%= answer.data %> %
+                     </h6>
+ 
+
+
+                     <h6 class="card-title">
+                        Organization:   <%= answer.organization %> %
+                     </h6>
+ 
+ 
+                     <h6 class="card-title">
+                        Process & dashboards:   <%= answer.process %> %
+                     </h6>
+ 
+ 
+ 
+                    
                     
                   
-                  
 
-                    <a href="answers/<%= answer.id %>" class="btn btn-primary">Read More</a>
-
-                    <form action="answers/<%= answer.id %>?_method=DELETE" method="POST" class="d-inline">
-
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
+                    
 
 
                 </div>

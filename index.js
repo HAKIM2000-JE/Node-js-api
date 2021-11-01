@@ -20,7 +20,7 @@ app.use(cors())
 
 const mongoose= require('mongoose')
 
-mongoose.connect(URI, { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/blog', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 app.use(methodOverride('_method'))
