@@ -14,7 +14,7 @@ const questionRouter = require('./routes/question')
 var cors = require('cors')
 
 const port = process.env.PORT || 5000
-const URI = process.env.MONGODBURI || 'mongodb+srv://hakim:hakim@cluster0.zgwtf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const URI =  'mongodb+srv://hakim:hakim@cluster0.zgwtf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 app.use(cors())
 
