@@ -20,7 +20,7 @@ app.use(cors())
 
 const mongoose= require('mongoose')
 
-mongoose.connect('mongodb+srv://hakim:4yVNm3tQmGvecPl4@cluster0.aibb4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://hakim:hakim@cluster0.aibb4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 app.use(methodOverride('_method'))
