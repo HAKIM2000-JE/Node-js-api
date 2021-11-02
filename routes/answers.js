@@ -123,6 +123,7 @@ function saveAnswerAndRedirect(path) {
                 data=req.data
                 organization = req.organization
                 process =req.process
+                zone = req.zone
 
 
 

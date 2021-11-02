@@ -28,7 +28,8 @@ const answerschema = new mongoose.Schema({
 	tool:{type: String, required: true},
 	data:{type: String, required: true},
 	organization : {type: String, required: true},
-	process : {type: String, required: true}
+	process : {type: String, required: true},
+	zone : {type: String, required: true}
    
 
 
