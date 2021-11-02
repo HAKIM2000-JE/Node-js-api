@@ -14,13 +14,13 @@ const questionRouter = require('./routes/question')
 var cors = require('cors')
 
 const port = process.env.PORT || 5000
-const URI = process.env.MONGODBURI 
+// const URI = process.env.MONGODBURI 
 
 app.use(cors())
 
 const mongoose= require('mongoose')
 
-mongoose.connect(URI, { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://hakim:4yVNm3tQmGvecPl4@cluster0.aibb4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 app.use(methodOverride('_method'))
