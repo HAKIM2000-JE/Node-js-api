@@ -9,7 +9,12 @@ const articleRouter= require('./routes/articles')
 
 const answerRouter = require('./routes/answers')
 
+const filmRouter = require('./routes/films')
+
 const questionRouter = require('./routes/question')
+
+
+const userRouter = require('./routes/user')
 
 var cors = require('cors')
 
@@ -20,7 +25,7 @@ app.use(cors())
 
 const mongoose= require('mongoose')
 
-mongoose.connect(URI, { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://Abdelhakim_Jebabra:JYc73lnFuEhp1lUA@newgen-cluster.uocci.mongodb.net/mySecondDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 app.use(methodOverride('_method'))
@@ -47,7 +52,14 @@ app.use(express.urlencoded({extended: false}))
 app.use('/articles', articleRouter)
 app.use('/answers', answerRouter)
 
+app.use('/films', filmRouter)
+
 app.use('/questions', questionRouter)
+
+app.use('/user', userRouter)
+
+
+
 
 app.use('/auth', require('./routes/auth'))
 
