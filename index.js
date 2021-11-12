@@ -25,7 +25,7 @@ app.use(cors())
 
 const mongoose= require('mongoose')
 
-mongoose.connect('mongodb+srv://Abdelhakim_Jebabra:JYc73lnFuEhp1lUA@newgen-cluster.uocci.mongodb.net/mySecondDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/films', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 app.use(methodOverride('_method'))
